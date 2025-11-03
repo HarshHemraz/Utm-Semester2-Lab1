@@ -10,9 +10,11 @@ package Lab1;
  */
 public class Order {
     private String orderMeal;
-    
+    public Order() {
+        System.out.println("Order has been successfully created");
+    }
     public void setOrderMeal() {
-        orderMeal = "Chicken Fries, Burger, Salad Pasta meal order has been created";
+        orderMeal = "Combo Meal: Chicken Burger + French Fries + Chicken Salad Pasto + Soft Drink + Chicken Spicy Piece";
     }
     
     public String getOrderMeal() {
