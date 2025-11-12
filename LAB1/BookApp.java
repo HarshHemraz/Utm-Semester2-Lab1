@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package LAB1;
+package Lab1;
 
 import java.time.LocalDate;
 import javax.swing.JOptionPane;
@@ -14,7 +14,6 @@ import javax.swing.JOptionPane;
 public class BookApp extends javax.swing.JFrame {
 Book newBook = new Book();
 String name;
-
     /**
      * Creates new form BookApp
      */
@@ -203,18 +202,15 @@ String name;
         String s2 = jTextField2.getText(); //name
         String s3 = jTextField3.getText(); //author
         String s4 = jTextField4.getText(); 
-        String s5 = jTextField5.getText(); 
         
         int s6 = Integer.parseInt(s1);//isbn
         int s7 = Integer.parseInt(s4);//price
-        int s8 = Integer.parseInt(s5);//copies
-           
+                   
         
         newBook.setBookIsbn(s6);
         newBook.setBookName(s2);
         newBook.setBookAuthor(s3);
         newBook.setBookPrice(s7);
-        newBook.setBookCopies(s8);
 
         JOptionPane.showMessageDialog(null, "New book has been created \nBook ISBN: " + newBook.getBookIsbn()
         + "\nBook name: " + newBook.getBookName() + "\nAuthor: " + newBook.getBookAuthor() + "\nPrice: " +

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package LAB1;
+package Lab1;
 import java.time.LocalDate;
 import javax.swing.JOptionPane;
 /**
@@ -69,7 +69,7 @@ public void reserve_book(String bookName, LocalDate date) {
 }
 
 public void borrow_book(String bookName) {
-    bookName = JOptionPane.showInputDialog("Insert book name to book");
+    bookName = JOptionPane.showInputDialog("Insert book name to borrow");
     boolean available = false;
     String output;
     if (number_of_copies > 0 && bookName.equals(book_name) ) {
